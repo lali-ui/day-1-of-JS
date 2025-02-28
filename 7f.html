@@ -17,10 +17,11 @@
     function convertTemperature(degrees, unit){
       if (unit === 'C'){
         const result = convertToFahrenheit(degrees);
-        result`${result}F`;
+        return`${result}F`;
+
       } else if (unit ==='F'){
         const result = convertTocelsius(degrees);
-        result`${result}C`;
+        return`${result}C`;
       }
      }
     console.log(convertTemperature(25, 'C'));
