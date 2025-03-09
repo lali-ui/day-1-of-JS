@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hello world from small world</title>
+  <style>
+    .clickme{
+      padding: 4px;
+      background-color: green;
+      color: white;
+      border: none;
+      margin-right: 10px;
+      margin-bottom: 20px;
+    }
+    .bhaiya{
+      padding: 6px;
+      background-color: lightblue;
+      color: black;
+      border: none;
+      margin-right: 10px;
+      border-radius: 5px;
+    }
+    .lali{
+      padding: 6px;
+      background-color: lightcoral;
+      color: black;
+      border: none;
+      margin-right: 10px;
+      border-radius: 5px;
+    }
+    .didi{
+      padding: 6px;
+      background-color: lightpink;
+      color: black;
+      border: none;
+      margin-right: 10px;
+      border-radius: 5px;
+    }
+    .mummy{
+      padding: 6px;
+      background-color: lightseagreen;
+      color: black;
+      border: none;
+      margin-right: 10px;
+      border-radius: 5px;
+    }
+    .papaji{
+      padding: 6px;
+      background-color: lightsalmon;
+      color: black;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+  </head>
+  <body>
+    <div>
+      <button class="clickme" onclick="clickme()">
+        click me
+      </button>
+      
+      <div>
+        <button class="bhaiya" onclick= 'family("bhaiya")'>
+          Bhaiya 
+        </button>
+  
+        <button class="lali" onclick= 'family("lali")'>
+          Lali
+        </button>
+  
+        <button class="didi" onclick='family("didi")'>
+          Didi
+        </button>
+  
+        <button class="mummy" onclick='family("mummy")'>
+          Mummy
+        </button>
+  
+        <button class="papaji" onclick='family("papaji")'>
+          Papaji
+        </button>
+      </div>
+      
+    </div>
+   
+
+    <script>
+     
+      function clickme() {
+        let now = new Date();
+        let hour = now.getHours()
+          if (hour >= 5 && hour < 12) {
+            console.log ('Good Morning! 🌞' )
+          } else if (hour >=12 && hour < 15 ) {
+            console.log ('Good Afternoon! ☀️')
+          } else if (hour >= 15 && hour < 19) {
+            console.log ('Good Evening! 🌆')
+          } else {
+            console.log ('Good Night! 🌙')
+          }
+        
+      } 
+
+    
+      function family (member) {
+        if (member === "bhaiya") {
+          console.log ('hello lali')
+
+        } if (member ==="lali") {
+          console.log ('hello bhaiya')
+
+        } if (member === "didi") {
+          console.log ('whatssssss upppp!')
+
+        } if (member ==="mummy") {
+          console.log ('kya haal hai?')
+
+        } if (member ==="papaji") {
+          console.log ('haan haan')
+        }
+      }
+
+    </script>
+  </body>
+  
+</html>

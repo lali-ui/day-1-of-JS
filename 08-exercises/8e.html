@@ -5,11 +5,13 @@
   </head>
   <body>
     <script>
-      function isSameProduct (product1,product2){
-        if 
-        (product1 === product2) {
+      function isSameProduct(product1, product2) {
+        return (
+          product1.name === product2.name &&
+          product1.price === product2.price
+        );
       }
-    } 
+   
       const product1 = {
         name: 'Basketball',
         price: 2095 
