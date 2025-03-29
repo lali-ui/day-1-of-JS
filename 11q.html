@@ -8,14 +8,15 @@
       function findIndex (array, word){
         let found = -1;
         for(i = 0 ; i <array.length; i++ ) {
-          if (array[i] === 'search'){
+          if (array[i] === word){
             found = i;
             break;
           }
         }
-        console.log(found)
+        return found;
       }
       // const array =['hello','world','search','good','search']
+      console.log(findIndex(['green','red','blue','red'],'red'))
       
     </script>
 
