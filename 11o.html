@@ -1,27 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>11n</title>
+    <title>11o</title>
   </head>
   <body>
     <script>
-      function countWords(words){
-        const result = {};
+      const array =['hello','world','search','good','search']
+      let found = -1;
+      for(i = 0 ; i <array.length; i++ ) {
 
-      for (let i = 0; i< words.length; i++){
-        const word = words[i];
-        if (!result[word]){
-          result[word]=1
-        } else {
-          result[word]++;
+        if (array[i] === 'search'){
+          found = i;
+          break;
         }
+
       }
-        return result;
-      }
-      
-      
-      
-      console.log(countWords(['apple', 'grape', 'apple', 'apple']));
+      console.log(found)
     </script>
 
   </body>
